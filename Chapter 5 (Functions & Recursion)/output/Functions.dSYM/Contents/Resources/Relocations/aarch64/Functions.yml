@@ -1,0 +1,9 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/anshkumarsingh/Desktop/C Programs/Chapter 5 (Functions & Recursion)/output/Functions'
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x100003EEC, symSize: 0x3C }
+  - { offsetInCU: 0x41, offset: 0x41, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x100003EEC, symSize: 0x3C }
+  - { offsetInCU: 0x5A, offset: 0x5A, size: 0x8, addend: 0x0, symName: _printHello, symObjAddr: 0x3C, symBinAddr: 0x100003F28, symSize: 0x28 }
+  - { offsetInCU: 0x6F, offset: 0x6F, size: 0x8, addend: 0x0, symName: _printGoodbye, symObjAddr: 0x64, symBinAddr: 0x100003F50, symSize: 0x1C }
+...

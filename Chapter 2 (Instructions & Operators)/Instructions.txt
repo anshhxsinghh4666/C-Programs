@@ -1,0 +1,6 @@
+INSTRUCTIONS: These are statements in a program
+
+Types Of Instructions :
+                1. Type Declaration Instructions
+                2. Arithmetic Instructions
+                3. Control Instructions
