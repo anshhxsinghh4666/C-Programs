@@ -216,17 +216,39 @@
 
 
 
-#include <stdio.h>
+// #include <stdio.h>
 
-int main() {
-    int n;
-    printf("Enter Year");
-    scanf("%d", &n);
-    if(n%400==0){
-pattern        if()
+// int main() {
+//     int n;
+//     printf("Enter Year");
+//     scanf("%d", &n);
+//     if(n%400==0){
+// pattern        if()
     
-    else if(n%400!=0 && n%100==0){
-        printf("Not LEap Year");
-    }
-    else()
+//     else if(n%400!=0 && n%100==0){
+//         printf("Not LEap Year");
+//     }
+//     else()
+// }
+
+
+
+#include <stdio.h>
+#include <string.h>
+
+struct student {
+    long long int roll;
+    float marks;
+    char *name;
+};
+
+int main(){
+    struct student s1;
+    s1.roll = 2428010128;
+    s1.marks = 8.78f;
+    s1.name = "Ansh";
+
+    printf("Name: %s\nRoll: %lld\nMarks: %.2f\n", s1.name, s1.roll, s1.marks);
+
+    return 0;
 }
