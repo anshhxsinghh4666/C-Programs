@@ -7,7 +7,7 @@ int main() {
     printf("Enter a 4 digit Number : ");
     scanf("%d", &n);
 
-    if (n > 9999 && n < 1000) {
+    if (n < 9999 && n < 1000) {
         printf("Invalid Input");
         return 0;
     }
