@@ -1,48 +1,39 @@
 // Addition of 2 numbers. Take matrices from user
 
-
 #include <stdio.h>
 #include <stdlib.h>
 
-
-
 int main() {
-    int r1, r2, c1, c2;
-    printf("Enter Number Of Rows For First Matrix :");
-    scanf("%d", &r1);
-    printf("Enter Number of Columns For First Matrix :");
-    scanf("%d", &r2);
-    printf("Number Of Rows For second Matrix");
-    scanf("%d", &c1);
+    int r, c;
+    printf("Enter number of rows: ");
+    scanf("%d", &r);
+    printf("Enter number of columns: ");
+    scanf("%d", &c);
 
-    if(r1!=r2 || c2!=c2){
-        printf("Matrices can't be added. Number of rows and columns should be same.");
-        return 0;
-    }
+    int a[r][c], b[r][c], sum[r][c];
 
-    int a[r1][c1], b[r2][c2];
-
-    printf("Enter %d values for First Matrix :", r1*c1);
-    for(int i=0; i<r1; i++) {
-        for(int j=0; j<c1; j++) {
-            scanf("%d", &a[r1][c1]);
+    printf("Enter %d values for First Matrix:\n", r * c);
+    for (int i = 0; i < r; i++) {
+        for (int j = 0; j < c; j++) {
+            scanf("%d", &a[i][j]);
         }
     }
 
-    printf("Enter %d values for Second Matrix :", r2*c2);
-    for(int i=0; i<r2; i++) {
-        for(int j=0; j<c2; j++) {
-            scanf("%d", &a[r2][c2]);
+    printf("Enter %d values for Second Matrix:\n", r * c);
+    for (int i = 0; i < r; i++) {
+        for (int j = 0; j < c; j++) {
+            scanf("%d", &b[i][j]);
         }
     }
 
-    printf("Sum :", r1*c1);
-    for(int i=0; i<r1; i++) {
-        for(int j=0; j<c1; j++) {
-            printf("%d", a[r1][c1]+a[r2][c2]);
+    printf("Sum:\n");
+    for (int i = 0; i < r; i++) {
+        for (int j = 0; j < c; j++) {
+            sum[i][j] = a[i][j] + b[i][j];
+            printf("%d ", sum[i][j]);
         }
+        printf("\n");
     }
-    
+
     return 0;
-
 }
