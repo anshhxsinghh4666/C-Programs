@@ -13,17 +13,14 @@
 //                   return 0;
 //               }
 
-
-
 #include <stdio.h>
 
-// Function Declaration/Prototype :  :
+// Function Declaration/Prototype :  Non Parametric Functions
 void printHello();  // 1st Function
 void printGoodbye();  // 2nd Function
 
 // Function Call :
 int main() {
-    
     // 1st Function Call
     printHello();  // 1st Call
     printHello();  // 2nd Call
@@ -38,16 +35,14 @@ int main() {
 
 // Function Definition :
 void printHello() {  // 1st Function Declaration
-    printf("Hello World\n"); // Printing "Hello World" on the console.
+    printf("Hello World\n");  // Printing "Hello World" on the console.
     printf("My name is Ansh\n");
 }
 
-void printGoodbye() { // 2nd Function Declaration
-    printf("Goodbye World\n"); // Printing "Goodbye World" on the console.
+void printGoodbye() {  // 2nd Function Declaration
+    printf("Goodbye World\n");  // Printing "Goodbye World" on the console.
 }
-
 
 // Check file Function_2.c for more info on Functions : -> Functions Properties
 //                                                      -> Functions Types
-//                                                      -> Passing Arguments                                                     
-
+//                                                      -> Passing Arguments

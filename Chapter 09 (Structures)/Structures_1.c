@@ -1,5 +1,6 @@
 // STRUCTURES : A collection of values of different data types.
 //              It is a user defined Datatype
+
 // Synatx : Structure Declaration :
 //          struct student{
 //          char name[100];
@@ -18,13 +19,11 @@
 
 // Check Notepad for More information
 
-
-
 #include <stdio.h>
 #include <string.h>
 
 // Structure Declaration :
-struct student{
+struct student {
     int roll;
     float cgpa;
     char name[100];  // Using Arrays
@@ -39,15 +38,14 @@ int main() {
     // s1.name = "Nehal"; -> Wrong Syntax (if using Character array) : Check Notepad for Info.
     strcpy(s1.name, "Ansh");  // Check Notepad for Reason
     s1.name_ = "Nehal";  // We can use this if we use string using pointers.
-    
+
     printf("Student Name : %s\n", s1.name);
     puts(s1.name_);
     printf("Student Roll No. : %d\n", s1.roll);
     printf("Student Cgpa : %f\n", s1.cgpa);
-    
+
     return 0;
 }
-
 
 // Benefits of Using Structures :
 // 1. Saves us from creating to many different variables.

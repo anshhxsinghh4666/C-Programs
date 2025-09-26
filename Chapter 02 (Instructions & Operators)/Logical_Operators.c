@@ -3,7 +3,6 @@
 #include <stdio.h>
 
 int main() {
-    
     // AND (&&)
     printf("%d\n", 4 > 3 && 5 > 2);  //Output = 1 (True)
     printf("%d\n", 4 < 3 && 5 > 2);  //Output = 0 (False)
@@ -12,24 +11,20 @@ int main() {
     printf("%d\n", 4 > 3 || 5 < 2);  //Output = 1 (True)
 
     // NOT (!)
-    printf("%d\n",!(4 > 3));       //Output = 0 (False)
-    printf("%d\n",!(4 < 3));       //Output = 1 (True)
-    printf("%d\n",!(4 > 3 && 5 < 2)); // Output = 1 (True)
+    printf("%d\n", !(4 > 3));  //Output = 0 (False)
+    printf("%d\n", !(4 < 3));  //Output = 1 (True)
+    printf("%d\n", !(4 > 3 && 5 < 2));  // Output = 1 (True)
     return 0;
 }
 
+// Operator Precedence :
 
-// Operator Precedence : 
-
-//         Priortity                Operator
-            //    1                     !
-            //    2                 * , / , %
-            //    3                   + , -
-            //    4              < , <= , > , >=
-            //    5                  == , !=
-            //    6                     &&
-            //    7                     ||
-            //    8                      =
-               
-
-               
+//         Priortity                Operator  (Left to right precedance)
+//    1                     !
+//    2                 * , / , %
+//    3                   + , -
+//    4              < , <= , > , >=
+//    5                  == , !=
+//    6                     &&
+//    7                     ||
+//    8                      =
